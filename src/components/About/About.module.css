@@ -1,0 +1,68 @@
+.aboutImg {
+  width: 250px;
+  margin-right: -1.9rem;
+  justify-self: center;
+  align-self: center;
+  filter: drop-shadow(4px 1px 4px rgba(0, 0, 0, 0.452));
+}
+
+.aboutDiscription {
+  text-align: justify;
+  margin-bottom: var(--mb-2-5);
+}
+
+.aboutInfo {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2-5);
+}
+
+.aboutInfoName {
+  font-size: var(--smaller-font-size);
+}
+
+.aboutInfoTitle {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+
+.aboutInfoTitle, .aboutInfoName {
+  display: block;
+  text-align: center;
+}
+
+.aboutBtns {
+  display: flex;
+  justify-content: center;
+}
+
+/*==================== MEDIA QUERIES ====================*/
+
+/* For medium devices */
+
+@media screen and (min-width: 568px) {
+  .aboutContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .aboutContainer {
+    column-gap: 5rem;
+  }
+  .aboutImg {
+    width: 350px;
+  }
+  .aboutDiscription {
+    text-align: initial;
+  }
+  .aboutInfo {
+    justify-content: space-between;
+  }
+  .aboutBtns {
+    justify-content: initial;
+  }
+}
+
+/* For large devices */

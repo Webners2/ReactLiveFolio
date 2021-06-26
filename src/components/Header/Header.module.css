@@ -1,0 +1,148 @@
+.navBtns {
+  display: flex;
+  align-items: center;
+}
+
+.changeTheme {
+  font-size: 1.25rem;
+  color: var(--title-color);
+  margin-right: var(--mb-1);
+  cursor: pointer;
+}
+
+.changeTheme:hover {
+  color: var(--first-color);
+}
+
+.active {
+  color: var(--first-color) !important;
+}
+
+.scrollHeader {
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.nav {
+  max-width: 968px;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navToggle {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.logo {
+  width: 70px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.navToggle {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.navToggle:hover {
+  color: var(--first-color);
+}
+
+.active {
+  color: var(--first-color);
+}
+
+@media screen and (max-width: 767px) {
+  .navMenu {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: 0.3s;
+  }
+}
+
+.navList {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.navLink {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  align-items: center;
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.navLink:hover {
+  color: var(--first-color);
+}
+
+.navIcon {
+  font-size: 1.2rem;
+}
+
+.navClose {
+  position: absolute;
+  right: 1.3rem;
+  bottom: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--first-color);
+}
+
+.navClose:hover {
+  color: var(--first-color-alt);
+}
+
+/* show menu */
+
+.showMenu {
+  bottom: 0;
+}
+
+/*==================== MEDIA QUERIES ====================*/
+
+/* For small devices */
+
+@media screen and (max-width: 350px) {
+  .navMenu {
+    padding: 2rem 0.25 4rem;
+  }
+  .navList {
+    column-gap: 0;
+  }
+}
+
+/* For medium devices */
+
+@media screen and (min-width: 768px) {
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+    column-gap: 1rem;
+  }
+  .navIcon, .navClose, .navToggle {
+    display: none;
+  }
+  .navList {
+    display: flex;
+    column-gap: 2rem;
+  }
+  .navMenu {
+    margin-left: auto;
+  }
+  .changeTheme {
+    margin: 0;
+  }
+}
+
+/* For large devices */

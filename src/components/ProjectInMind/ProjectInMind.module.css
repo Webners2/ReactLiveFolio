@@ -1,0 +1,69 @@
+.project {
+    text-align: center;
+}
+
+.projectBg {
+    background-color: var(--first-color-second);
+    padding-top: 3rem;
+}
+
+.projectTitle {
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-0-75);
+}
+
+.projectDiscription {
+    margin-bottom: var(--mb-1-5);
+}
+
+.projectTitle, .projectDiscription {
+    color: #fff;
+}
+
+.projectImg {
+    width: 232px;
+    justify-self: center;
+    filter: drop-shadow(4px 1px 4px rgba(0, 0, 0, 0.452));
+}
+
+/*==================== MEDIA QUERIES ====================*/
+
+/* For small devices */
+
+@media screen and (max-width: 350px) {
+    .projectImg {
+        width: 200px;
+    }
+}
+
+/* For medium devices */
+
+@media screen and (min-width: 568px) {
+    .projectContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .projectContent {
+        align-items: center;
+    }
+    .project {
+        text-align: initial;
+    }
+    .projectBg {
+        background: none;
+    }
+    .projectContainer {
+        background-color: var(--first-color-second);
+        border-radius: 1rem;
+        padding: 3rem 2.5rem 0;
+        grid-template-columns: 1fr max-content;
+        column-gap: 3rem;
+    }
+    .projectData {
+        padding-top: 0.8rem;
+    }
+}
+
+/* For large devices */

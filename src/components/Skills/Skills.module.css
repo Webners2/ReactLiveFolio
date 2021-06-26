@@ -1,0 +1,129 @@
+.skillsContainer {
+    row-gap: 0;
+}
+
+.skillsHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-1);
+    cursor: pointer;
+}
+
+.skillsIcon, .skillsArrow {
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+.activeArrow {
+    animation: shake 2s ease infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(-8deg);
+    }
+    8% {
+        transform: rotate(8deg);
+    }
+    16% {
+        transform: rotate(-8deg);
+    }
+    24% {
+        transform: rotate(8deg);
+    }
+    32% {
+        transform: rotate(-8deg);
+    }
+    40% {
+        transform: rotate(8deg);
+    }
+    48% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.skillsIcon {
+    margin-right: var(--mb-0-75);
+}
+
+.skillsTitle {
+    font-size: var(--h3-font-size);
+}
+
+.skillsSubtitles {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.skillsArrow {
+    margin-left: auto;
+    transition: 0.3s;
+}
+
+.skillsList {
+    row-gap: 1.5rem;
+    padding-left: 2.7rem;
+    transition: 0.3s;
+}
+
+.skillsTitles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--mb-0-5);
+}
+
+.skillsName {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.skillsBar, .skillsPercentage {
+    height: 5px;
+    border-radius: 0.25rem;
+}
+
+.skillsBar {
+    background-color: var(--first-color-lighter);
+}
+
+.skillsPercentage {
+    display: block;
+    background-color: var(--first-color);
+}
+
+.skillsClose .skillsList {
+    height: 0;
+    overflow: hidden;
+}
+
+.skillsOpen .skillsList {
+    height: max-content;
+    margin-bottom: var(--mb-2-5);
+}
+
+.skillsOpen .skillsArrow {
+    transform: rotate(-180deg);
+}
+
+/*==================== MEDIA QUERIES ====================*/
+
+/* For small devices */
+
+@media screen and (max-width: 350px) {
+    .skillsTitle {
+        font-size: var(--normal-font-size);
+    }
+}
+
+/* For medium devices */
+
+@media screen and (min-width: 568px) {
+    .skillsContainer{
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* For large devices */

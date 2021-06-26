@@ -1,0 +1,89 @@
+.contactContainer {
+    row-gap: 3rem;
+}
+
+.contactInfo {
+    display: flex;
+    margin-bottom: var(--mb-2);
+}
+
+.contactIcon {
+    font-size: 2rem;
+    color: var(--first-color);
+    margin-right: var(--mb-0-75);
+}
+
+.contactTitle {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.contactSubtitle {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.contactContent {
+    background-color: var(--input-color);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem 0.25rem;
+}
+
+.contactLabel {
+    font-size: var(--smaller-font-size);
+    color: var(--title-color);
+}
+
+.contactInput {
+    width: 100%;
+    background-color: var(--input-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    border: none;
+    outline: none;
+    padding: 0.25rem 0.5rem 0.5rem 0;
+}
+
+.btn {
+    border: none;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #fff;
+    padding: 1rem !important;
+    border-radius: 0.5rem;
+    font-weight: var(--font-medium) !important;
+}
+
+.btn:hover {
+    background-color: var(--first-color-alt);
+}
+
+.btnFlex {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/*==================== MEDIA QUERIES ====================*/
+
+/* For medium devices */
+
+@media screen and (min-width: 568px) {
+    .contactContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* For large devices */
+
+@media screen and (min-width: 1024px) {
+    .contactForm{
+        width: 460px;
+    }
+    .contactInputs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

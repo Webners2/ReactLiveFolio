@@ -1,0 +1,55 @@
+/* --------------------------------THIS CSS FILE IS ONLY MEANT TO GIVE DYNAMIC CLASSES IN A MAP AS STYLES.MODULE.CSS ISNT WORKING-------- */
+
+
+
+.skillsHtml{
+    width: 90%;
+}
+
+.skillsCss{
+    width: 85%;
+}
+
+.skillsReactRedux{
+    width: 90%;
+}
+
+.skillsFirebase{
+    width: 70%;
+}
+
+.skillsPs{
+    width: 85%;
+}
+
+.skillsAi{
+    width: 70%;
+}
+
+.skillsFigma{
+    width: 40%;
+}
+
+/* .designer .skillsList{
+    height: 0;
+    overflow: hidden;
+}
+
+.designer:active .skillsList{
+    height: max-content;
+    margin-bottom: var(--mb-2-5);
+} */
+
+/* .skillsClose .skillsList{
+    height: 0;
+    overflow: hidden;
+}
+
+.skillsOpen .skillsList{
+    height: max-content;
+    margin-bottom: var(--mb-2-5);
+}
+
+.skillsOpen .skillsArrow{
+    transform: rotate(-180deg);
+} */

@@ -1,0 +1,104 @@
+.qualificationTabs {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2);
+}
+
+.qualificationBtn {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    cursor: pointer;
+}
+
+.qualificationBtn:hover {
+    color: var(--first-color);
+}
+
+.qualificationIcon {
+    font-size: 1.8rem;
+    margin-right: var(--mb-0-25);
+}
+
+.qualificationData {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+}
+
+.qualificationTitle {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.qualificationSubtitle {
+    display: inline-block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-1);
+}
+
+.qualificationCalendar {
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+}
+
+.qualificationRounder {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: var(--first-color);
+    border-radius: 50%;
+}
+
+.qualificationLine {
+    display: block;
+    width: 1.5px;
+    height: 100%;
+    background-color: var(--first-color);
+    transform: translate(6px, -7px);
+}
+
+.qualificationContent {
+    display: none;
+}
+
+.qualificationActive {
+    display: block;
+}
+
+.activeBtn {
+    color: var(--first-color);
+}
+
+/*==================== MEDIA QUERIES ====================*/
+
+/* For small devices */
+
+@media screen and (max-width: 350px) {
+    .qualificationData {
+        gap: 0.5rem;
+    }
+}
+
+/* For medium devices */
+
+@media screen and (min-width: 568px) {
+    .qualificationSections {
+        display: grid;
+        grid-template-columns: 0.6fr;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .qualificationTabs {
+        justify-content: center;
+    }
+    .qualificationBtn{
+        margin: 0 var(--mb-1);
+    }
+    .qualificationSections{
+        grid-template-columns: .5fr;
+    }
+}
+
+/* For large devices */
